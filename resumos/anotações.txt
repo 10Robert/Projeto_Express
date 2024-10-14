@@ -1,0 +1,40 @@
+app.METHOD -> app é a instancia e METHOD se refere a os metodos http, por exemplo get e post. 
+- Esse metodo recebe dois parâmetros um path e uma função.
+- path que define a rota, não leva em consigeração a barra no final nem letra maisculas e minisculas.
+
+--- personalizando pagina 404 e 500 ---
+- usando metodo app.use 
+- Sempre escrever as rotas antes de chamar a pagina 404, caso contrario vai causar um erro no incio e vai chamar 404. mesmo tendo
+a rota em baixo.
+
+npm install express-handlebars -> servindo templates.
+
+
+npm install --save-dev jest -> framework utilizado para testes.
+(--save-dev diz que não é uma dependecia necessaria para o projeto funcionar, e sim uma dependecia para desenvolvimento.)
+sera listada na secção devdependencies.
+
+-Para executar os teste alterar package.json -> scritps "test": "jest"
+
+-- instalando o puppeteer -- 
+npm install --save-dev portfinder -> é uma versão headles e controlável do chrome(significa que o navegador pode ser executado sem uma ui)
+
+npm install --save-dev portfinder -> para identificar porta aberta ao executar a aplicação
+
+
+
+--- eslint ---
+
+Testes profundos. 
+eslint necessita de um arquivo incial de configuração para indicar as regras a serem utilizadas.
+
+criando arquivo de configuração 
+
+1 - \node_modules\.bin> .\eslint --init 
+após comando responder perguntas realizadas de acordo com o projeto a ser desenvolvido
+
+
+Armazenamento da memória
+
+*obs, quando o servidor é reiniciado as informações são perdidas.
+- npm install express-session
